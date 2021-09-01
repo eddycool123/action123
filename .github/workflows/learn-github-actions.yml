@@ -4,8 +4,10 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup .NET Core SDK
-      - uses: actions/setup-dotnet@v1.8
+      - name: First interaction
+        uses: actions/first-interaction@v1.1.0
+        with:
+          issue-message: Well done 
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
